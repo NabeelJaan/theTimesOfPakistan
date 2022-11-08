@@ -8,7 +8,7 @@
         </a>
     </div>
 
-    <div class="px-5 mt-4">
+    <div class="px-4 mt-4">
 
         <div class="text-xs mt-2 md:mt-0 mb-1 font-Jost">
 
@@ -20,12 +20,12 @@
         </div>
         
         <div>
-            <h3 class="text-xl my-3 font-Jost font-semibold leading-6">
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <h3 class="text-lg my-3 font-Jost font-semibold leading-6">
+                <a href="<?php the_permalink(); ?>">
+                    <?php echo wp_trim_words( get_the_title(), 10 ); ?>
+                </a>
             </h3>
-            <!-- <p class="text-sm font-Jost leading-21 my-2">
-                <?php the_title_excerpt('', '...', true, '120'); ?>
-            </p> -->
+
             <a class="transition ease-in-out duration-500 inline-block bg-green text-white text-xs leading-21 py-7 px-15 hover:bg-dark-green rounded-sm" href="<?php the_permalink(); ?>">Read More</a>
         </div>
     </div>    
