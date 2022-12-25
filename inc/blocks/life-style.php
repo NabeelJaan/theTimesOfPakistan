@@ -75,7 +75,8 @@
                         endwhile;
                         wp_reset_postdata();
                         endif;
-                        ?>
+                    ?>
+                    
                 </div>
 
             <?php 

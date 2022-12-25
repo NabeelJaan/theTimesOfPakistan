@@ -8,7 +8,7 @@ License: MIT
 
 
 ::-webkit-scrollbar {
-	width: 15px !important;
+	width: 12px !important;
 }
 ::-webkit-scrollbar-track {
 	background-color: #1F2024;

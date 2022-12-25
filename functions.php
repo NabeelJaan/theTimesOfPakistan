@@ -313,7 +313,7 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 /*
     ==========================================
-    Include files
+      Options Page
     ==========================================
 */
 
@@ -321,6 +321,8 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 if( function_exists('acf_add_options_page') ) {
 
 	acf_add_options_page();
+
+	acf_add_options_sub_page( 'Header' );
     
 	acf_add_options_sub_page( 'Footer' );
     

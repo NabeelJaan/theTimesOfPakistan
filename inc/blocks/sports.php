@@ -18,14 +18,39 @@
 
             <div class="tabs flex content-center justify-end">
                 <ul id="sports-tabs-nav" class="flex justify-end items-center">
-                    <li class="mr-5 relative"><a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-4">Feartured</a></li>
-                    <li class="mr-5 relative"><a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-5">Football</a></li>
-                    <li class="mr-5 relative"><a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-6">Hockey</a></li>
-                    <li class="relative"><a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-7">Cricket</a></li>
+
+                    <?php
+                        $terms = get_terms([
+                            'taxonomy' => 'category',
+                            'hide_empty' => false,
+                            'include' => array(get_field('show_on_home_page')),
+                        ]);
+                        
+                        foreach($terms as $term):
+                            $cat_image  =   get_field('category_image' ,$term);
+                    ?>
+                    
+
+                        <li class="mr-5 relative">
+                            <a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-4">Feartured</a>
+                        </li>
+                        
+                        
+                        <?php print_r(); ?>
+
+                    <?php 
+                        endforeach;
+                    ?>
+                    
                 </ul>
             </div>
+
         </div>
+
+
+
         <div id="sports-tabs-content">
+
             <div id="tabs-4" class= "sports-tab-content">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-6 border-b border-gray border-dashed">
                     <div class="col-span-2 lg:pr-5 lg:pb-5 lg:border-r border-gray border-dashed">
