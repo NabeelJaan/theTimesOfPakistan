@@ -311,6 +311,23 @@ function ttop_set_post_views($postID) {
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 
+/*
+    ==========================================
+    Include files
+    ==========================================
+*/
+
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+    
+	acf_add_options_sub_page( 'Footer' );
+    
+}
+
+
+
 
 /*
 	==========================================

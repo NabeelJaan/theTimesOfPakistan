@@ -20696,6 +20696,10 @@
   padding: 0.875rem;
 }
 
+.p-26px {
+  padding: 26px;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -20904,6 +20908,11 @@
 .px-3\.5 {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
+}
+
+.px-26px {
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
 .py-0 {
@@ -21116,6 +21125,11 @@
   padding-bottom: 0.875rem;
 }
 
+.py-26px {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -21282,6 +21296,10 @@
 
 .pt-3\.5 {
   padding-top: 0.875rem;
+}
+
+.pt-26px {
+  padding-top: 26px;
 }
 
 .pr-0 {
@@ -21452,6 +21470,10 @@
   padding-right: 0.875rem;
 }
 
+.pr-26px {
+  padding-right: 26px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -21620,6 +21642,10 @@
   padding-bottom: 0.875rem;
 }
 
+.pb-26px {
+  padding-bottom: 26px;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -21786,6 +21812,10 @@
 
 .pl-3\.5 {
   padding-left: 0.875rem;
+}
+
+.pl-26px {
+  padding-left: 26px;
 }
 
 .text-left {
@@ -51207,6 +51237,10 @@
     padding: 0.875rem;
   }
 
+  .sm\:p-26px {
+    padding: 26px;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -51415,6 +51449,11 @@
   .sm\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .sm\:px-26px {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .sm\:py-0 {
@@ -51627,6 +51666,11 @@
     padding-bottom: 0.875rem;
   }
 
+  .sm\:py-26px {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -51793,6 +51837,10 @@
 
   .sm\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .sm\:pt-26px {
+    padding-top: 26px;
   }
 
   .sm\:pr-0 {
@@ -51963,6 +52011,10 @@
     padding-right: 0.875rem;
   }
 
+  .sm\:pr-26px {
+    padding-right: 26px;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -52131,6 +52183,10 @@
     padding-bottom: 0.875rem;
   }
 
+  .sm\:pb-26px {
+    padding-bottom: 26px;
+  }
+
   .sm\:pl-0 {
     padding-left: 0px;
   }
@@ -52297,6 +52353,10 @@
 
   .sm\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .sm\:pl-26px {
+    padding-left: 26px;
   }
 
   .sm\:text-left {
@@ -81651,6 +81711,10 @@
     padding: 0.875rem;
   }
 
+  .md\:p-26px {
+    padding: 26px;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -81859,6 +81923,11 @@
   .md\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .md\:px-26px {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .md\:py-0 {
@@ -82071,6 +82140,11 @@
     padding-bottom: 0.875rem;
   }
 
+  .md\:py-26px {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
@@ -82237,6 +82311,10 @@
 
   .md\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .md\:pt-26px {
+    padding-top: 26px;
   }
 
   .md\:pr-0 {
@@ -82407,6 +82485,10 @@
     padding-right: 0.875rem;
   }
 
+  .md\:pr-26px {
+    padding-right: 26px;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -82575,6 +82657,10 @@
     padding-bottom: 0.875rem;
   }
 
+  .md\:pb-26px {
+    padding-bottom: 26px;
+  }
+
   .md\:pl-0 {
     padding-left: 0px;
   }
@@ -82741,6 +82827,10 @@
 
   .md\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .md\:pl-26px {
+    padding-left: 26px;
   }
 
   .md\:text-left {
@@ -112095,6 +112185,10 @@
     padding: 0.875rem;
   }
 
+  .lg\:p-26px {
+    padding: 26px;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -112303,6 +112397,11 @@
   .lg\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .lg\:px-26px {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .lg\:py-0 {
@@ -112515,6 +112614,11 @@
     padding-bottom: 0.875rem;
   }
 
+  .lg\:py-26px {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -112681,6 +112785,10 @@
 
   .lg\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .lg\:pt-26px {
+    padding-top: 26px;
   }
 
   .lg\:pr-0 {
@@ -112851,6 +112959,10 @@
     padding-right: 0.875rem;
   }
 
+  .lg\:pr-26px {
+    padding-right: 26px;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -113019,6 +113131,10 @@
     padding-bottom: 0.875rem;
   }
 
+  .lg\:pb-26px {
+    padding-bottom: 26px;
+  }
+
   .lg\:pl-0 {
     padding-left: 0px;
   }
@@ -113185,6 +113301,10 @@
 
   .lg\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .lg\:pl-26px {
+    padding-left: 26px;
   }
 
   .lg\:text-left {
@@ -142539,6 +142659,10 @@
     padding: 0.875rem;
   }
 
+  .xl\:p-26px {
+    padding: 26px;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -142747,6 +142871,11 @@
   .xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .xl\:px-26px {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .xl\:py-0 {
@@ -142959,6 +143088,11 @@
     padding-bottom: 0.875rem;
   }
 
+  .xl\:py-26px {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
   .xl\:pt-0 {
     padding-top: 0px;
   }
@@ -143125,6 +143259,10 @@
 
   .xl\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .xl\:pt-26px {
+    padding-top: 26px;
   }
 
   .xl\:pr-0 {
@@ -143295,6 +143433,10 @@
     padding-right: 0.875rem;
   }
 
+  .xl\:pr-26px {
+    padding-right: 26px;
+  }
+
   .xl\:pb-0 {
     padding-bottom: 0px;
   }
@@ -143463,6 +143605,10 @@
     padding-bottom: 0.875rem;
   }
 
+  .xl\:pb-26px {
+    padding-bottom: 26px;
+  }
+
   .xl\:pl-0 {
     padding-left: 0px;
   }
@@ -143629,6 +143775,10 @@
 
   .xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .xl\:pl-26px {
+    padding-left: 26px;
   }
 
   .xl\:text-left {
@@ -172983,6 +173133,10 @@
     padding: 0.875rem;
   }
 
+  .\32xl\:p-26px {
+    padding: 26px;
+  }
+
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -173191,6 +173345,11 @@
   .\32xl\:px-3\.5 {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
+  }
+
+  .\32xl\:px-26px {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .\32xl\:py-0 {
@@ -173403,6 +173562,11 @@
     padding-bottom: 0.875rem;
   }
 
+  .\32xl\:py-26px {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
   .\32xl\:pt-0 {
     padding-top: 0px;
   }
@@ -173569,6 +173733,10 @@
 
   .\32xl\:pt-3\.5 {
     padding-top: 0.875rem;
+  }
+
+  .\32xl\:pt-26px {
+    padding-top: 26px;
   }
 
   .\32xl\:pr-0 {
@@ -173739,6 +173907,10 @@
     padding-right: 0.875rem;
   }
 
+  .\32xl\:pr-26px {
+    padding-right: 26px;
+  }
+
   .\32xl\:pb-0 {
     padding-bottom: 0px;
   }
@@ -173907,6 +174079,10 @@
     padding-bottom: 0.875rem;
   }
 
+  .\32xl\:pb-26px {
+    padding-bottom: 26px;
+  }
+
   .\32xl\:pl-0 {
     padding-left: 0px;
   }
@@ -174073,6 +174249,10 @@
 
   .\32xl\:pl-3\.5 {
     padding-left: 0.875rem;
+  }
+
+  .\32xl\:pl-26px {
+    padding-left: 26px;
   }
 
   .\32xl\:text-left {
