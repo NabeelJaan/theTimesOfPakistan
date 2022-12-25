@@ -56,7 +56,7 @@
 
                             </div>
 
-                            <div class="crousel-text-ls absolute bottom-36 left-3 max-w-370px">
+                            <div class="crousel-text-ls absolute bottom-24 left-3 max-w-370px">
 
                                 <h6 class="font-Jost font-medium text-xl text-white text-left px-4 pb-5">
                                     <?php the_title(); ?>

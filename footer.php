@@ -4,7 +4,7 @@
 			<div class="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 grid-flow-row border-b border-black border-solid pb-8">
 				<div class="sm:pr-5 md:pr-8">
 					<a class="site-logo font bold text-4xl text-green text-right" href="#">The Times Of Pakistan</a>
-					<p class="font-Jost text-base mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga debitis nam non, quidem doloribus beatae earum</p>
+					<p class="font-Jost text-base mt-5">"The Times Of Pakistan, Pakistan Based Tech and News website. Our main goal is "We Update you about Technology, Business, Auto, Mobile, and Current affairs News from Pakistan and all over the World."</p>
 					<div class="footer-social mt-5">
 						<ul class="flex">
 							<li class="mr-4">
