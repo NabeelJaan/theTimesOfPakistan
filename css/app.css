@@ -31125,6 +31125,22 @@ video {
       list-style-type: decimal;
     }
 
+::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1F2024;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #86C540;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

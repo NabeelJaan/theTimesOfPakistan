@@ -12,26 +12,26 @@
                 <?php
                     $args = array(
                         'post_type'         =>  'post',
-                        'posts_per_page'    =>  1,
-                        'post_status'       =>  'publish',
-						'cat'               =>   9,
+                        'posts_per_page'    =>  5,
+						'cat'               =>  9,
+                        'post_status'       =>  'publish'
                     );
+
                     $the_query = new WP_Query( $args );
-                    $i = 1;
-                    if ( $the_query->have_posts() ):
-                        while ( $the_query->have_posts() ) : $the_query->the_post();
-                        $ex_id = get_the_ID();
+
+                    $allFeaturedPosts = $the_query->posts;
+
+                    $featuredPost = $allFeaturedPosts[0];
                 ?>
 
-                <a href="<?php the_permalink(); ?>">
                     <div class="f-img">
-                        <?php the_post_thumbnail('featured-main'); ?>
+                        <?php echo get_the_post_thumbnail( $featuredPost->ID, 'featured-main', ['class' => 'w-full transition ease-in-out duration-300 hover:scale-125' ] ); ?>
                     </div>
 
                     <div class="overlay">
                         <div class="absolute bottom-0 p-2.5 md:py-22 md:px-5">
                             <?php
-                                $categories = get_the_category();
+                                $categories = get_the_category( $featuredPost->ID );
                                 $separator = ' ';
                                 $output = '';
                                 if ( ! empty( $categories ) ) {
@@ -42,52 +42,46 @@
                                 }
                             ?>
 
-                            <a href="<?php the_permalink(); ?>">
-                                <h1 class="text-lg md:text-3xl mt-3 md:my-3 leading-6 font-Jost text-white md:font-medium"><?php the_title(); ?></h1>
+                            <a href="<?php the_permalink( $featuredPost->ID ); ?>">
+                                <h1 class="text-lg md:text-3xl mt-3 md:my-3 leading-6 font-Jost text-white md:font-medium">
+                                    <?php echo get_the_title( $featuredPost->ID ); ?>
+                                </h1>
                             </a>
 
-                            <a class="hidden md:block text-white font-Jost" href="<?php the_permalink(); ?>">
-                                <span class="font-bold"><?php echo get_the_author(); ?>
-                                </span><?php echo get_the_date('F j, Y'); ?>
+                            <a class="hidden md:block text-white font-Jost" href="<?php the_permalink( $featuredPost->ID ); ?>">
+                                <span class="font-bold">
+                                    <?php 
+                                        $author_id=$featuredPost->post_author;
+                                        the_author_meta( 'display_name' , $author_id )
+                                    ?>
+                                </span>
+
+                                <?php echo get_the_date('F j, Y'); ?>
                             </a>
                         </div>
                     </div>
-                </a>
 
-                <?php
-                    $i++;
-                    endwhile;
-                    wp_reset_postdata();
-                    endif;
-                ?>
             </div> <!-- End of left div -->
 
 
             <div class="md:w-3/6 grid grid-row-2 grid-cols-2 gap-1"> <!-- start right div -->
+
                 <?php
-                    $args = array(
-                        'post_type'         =>  'post',
-                        'cat'               =>   9,
-                        'posts_per_page'    =>   4,
-                        'post_status'       =>  'publish',
-                        'offset'			=>  1
-                    );
-                    $the_query = new WP_Query( $args );
-                    $i = 1;
-                    if ( $the_query->have_posts() ):
-                        while ( $the_query->have_posts() ) : $the_query->the_post();
+
+                    foreach ($allFeaturedPosts as $index=>$post) : 
+                    if ($index > 0) :
                 ?>
 
                 <div class="hover-effect relative"><!-- Inner div -->
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php the_permalink( $post->ID ); ?>">
                         <div class="f-img2">
-                            <?php the_post_thumbnail('featured-img-s',['class' => 'w-full']); ?>
+                            <?php echo get_the_post_thumbnail( $post->ID, 'featured-img-s', ['class' => 'w-full transition ease-in-out duration-300 hover:scale-125' ] ); ?>
                         </div>
 
                         <div class="overlay">
                             <div class="absolute bottom-0 px-2.5 pb-1 md:py-11 md:px-15">
                                 <?php
-                                        $categories = get_the_category();
+                                        $categories = get_the_category( $post->ID );
                                         $separator = ' ';
                                         $output = '';
                                         if ( ! empty( $categories ) ) {
@@ -97,9 +91,9 @@
                                             echo trim( $output, $separator );
                                         }
                                     ?>
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="<?php the_permalink( $post->ID ); ?>">
                                     <h2 class="text-white mt-2 leading-4 text-sm font-Jost md:text-base md:font-medium md:leading-5">
-                                        <?php the_title_excerpt('', '...', true, '55'); ?>
+                                        <?php echo get_the_title( $post->ID ); ?>
                                     </h2>
                                 </a>
                             </div>
@@ -108,11 +102,10 @@
                 </div> <!-- End Inner div -->
 
                 <?php
-			        $i++;
-                    endwhile;
-                    wp_reset_postdata();
                     endif;
+                    endforeach;
                 ?>
+
             </div><!--End of right Div-->
         </div> <!-- End Main div -->
     </div><!-- End container div -->
