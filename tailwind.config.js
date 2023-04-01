@@ -30,8 +30,9 @@ module.exports = {
                 'red-violet'   : '#bc2a8d',
                 'dark-blue'    : '#0077b5',
                 'light-grey'   : '#232D35',
-                'light-gray' : '#ccc'
-            },
+                'light-gray'   : '#ccc',
+                'red'          : '#FF0000'
+          },
             textColor: theme => theme('colors'),
             textColor: {
                 'black-light': '#1C1C1C',
@@ -61,6 +62,7 @@ module.exports = {
                 '110' : '6.875rem',
                 '1/03': '30%',
                 '3/3': '70%',
+                '20%': '20%',
                 '300px': '300px',
                 '150px':'150px',
                 '270px':'270px'
@@ -73,7 +75,14 @@ module.exports = {
                 '270px': '270px',
                 '190px':'190px',
                 '174px':'174px',
-                '85px':'85px'
+                '85px':'85px',
+                '730px':'730px',
+                '760px':'760px',
+                '477px':'477px',
+                '365px':'365px',
+                '319px':'319px',
+                '289px':'289px',
+                '164px':'164px'
             },
             height: {
                 '50': '50px',
@@ -87,7 +96,6 @@ module.exports = {
                 '60px': '60px',
                 '210px':'210px',
                 '100px':'100px'
-
             },
             margin: {
                 '03': '0.188rem',

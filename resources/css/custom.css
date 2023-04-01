@@ -50,3 +50,11 @@
 -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
+
+/* Mobile price */
+.table__wrapper tr > td {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+	font-family: 'Jost', sans-serif;
+}

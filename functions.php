@@ -106,6 +106,8 @@ function tailpress_setup() {
 	add_image_size( 'lp-img',360, 203, true );
 	add_image_size( 'mvp-img',110, 75, true );
 
+	add_image_size( 'image-120x150', 120, 150, true );
+
 	// Block editor.
 	add_theme_support( 'align-wide' );
 
@@ -313,7 +315,7 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 /*
     ==========================================
-      Options Page
+    Include files
     ==========================================
 */
 
@@ -387,6 +389,20 @@ function techBasket_acf_block() {
         	)
 		);
 
+		// Register Mobile Phones.
+
+		acf_register_block_type(
+			array(
+				'name'              => __('Mobile Phones'),
+				'title'             => __('Mobile Phones'),
+				'description'       => __('A custom block for Latest Post'),
+				'render_template'   => 'inc/blocks/mobile-phones.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+        	)
+		);
+		
 		// Rgister for visual stories
 		
 		acf_register_block_type(
@@ -442,5 +458,131 @@ function techBasket_acf_block() {
 				'keywords'			=> array( '', '' ),
         	)
 		);
+
+		// Rgister for Mobiles Price
+
+		acf_register_block_type(
+			array(
+				'name'              => __('Mobiles Price'),
+				'title'             => __('Mobiles Price'),
+				'description'       => __('A custom block for Life Style'),
+				'render_template'   => 'inc/blocks/mobiles-price.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+			)
+		);
+		
+		// Rgister for Contact Us
+
+		acf_register_block_type(
+			array(
+				'name'              => __('Contact Us'),
+				'title'             => __('Contact Us'),
+				'description'       => __('A custom block for Life Style'),
+				'render_template'   => 'inc/blocks/contact-us.php',
+				'category'          => 'techbasket',
+				'icon'				=> 'admin-comments',
+				'keywords'			=> array( '', '' ),
+			)
+		);
 	}
 }
+
+
+// Mobile Price CPT
+
+function create_custom_post_type() {
+    $labels = array(
+        'name' => __( 'Mobiles Price', 'textdomain' ),
+        'singular_name' => __( 'Mobile Price', 'textdomain' ),
+        'menu_name' => __( 'Mobiles', 'textdomain' ),
+        'all_items' => __( 'All Mobiles', 'textdomain' ),
+        'add_new' => __( 'Add New', 'textdomain' ),
+        'add_new_item' => __( 'Add New Mobile', 'textdomain' ),
+        'edit_item' => __( 'Edit Mobile', 'textdomain' ),
+        'new_item' => __( 'New Mobile', 'textdomain' ),
+        'view_item' => __( 'View Mobile', 'textdomain' ),
+        'search_items' => __( 'Search Mobiles', 'textdomain' ),
+        'not_found' => __( 'No mobiles found', 'textdomain' ),
+        'not_found_in_trash' => __( 'No mobiles found in trash', 'textdomain' ),
+        'parent_item_colon' => __( 'Parent Mobile:', 'textdomain' ),
+        'featured_image' => __( 'Featured image for this mobile', 'textdomain' ),
+        'set_featured_image' => __( 'Set featured image for this mobile', 'textdomain' ),
+        'remove_featured_image' => __( 'Remove featured image for this mobile', 'textdomain' ),
+        'use_featured_image' => __( 'Use as featured image for this mobile', 'textdomain' ),
+        'archives' => __( 'Mobile archives', 'textdomain' ),
+        'insert_into_item' => __( 'Insert into mobile', 'textdomain' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this mobile', 'textdomain' ),
+        'filter_items_list' => __( 'Filter mobiles list', 'textdomain' ),
+        'items_list_navigation' => __( 'Mobiles list navigation', 'textdomain' ),
+        'items_list' => __( 'Mobiles list', 'textdomain' ),
+    );
+    $args = array(
+        'label' => __( 'Mobiles Price', 'textdomain' ),
+        'labels' => $labels,
+        'description' => __( 'A custom post type for mobiles', 'textdomain' ),
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_rest' => true,
+        'rest_base' => 'mobiles',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'has_archive' => true,
+        'rewrite' => array(
+            'slug' => 'mobiles',
+            'with_front' => true,
+            'pages' => true,
+            'feeds' => true,
+        ),
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'comments',
+            'revisions',
+            'custom-fields',
+        ),
+        'taxonomies' => array(
+            'brand',
+            'color',
+        ),
+    );
+    register_post_type( 'mobile', $args );
+}
+add_action( 'init', 'create_custom_post_type' );
+
+
+
+function create_mobile_brands_taxonomy() {
+    $labels = array(
+        'name' => __( 'Mobile Brands', 'textdomain' ),
+        'singular_name' => __( 'Mobile Brand', 'textdomain' ),
+        'search_items' => __( 'Search Mobile Brands', 'textdomain' ),
+        'all_items' => __( 'All Mobile Brands', 'textdomain' ),
+        'parent_item' => __( 'Parent Mobile Brand', 'textdomain' ),
+        'parent_item_colon' => __( 'Parent Mobile Brand:', 'textdomain' ),
+        'edit_item' => __( 'Edit Mobile Brand', 'textdomain' ),
+        'update_item' => __( 'Update Mobile Brand', 'textdomain' ),
+        'add_new_item' => __( 'Add New Mobile Brand', 'textdomain' ),
+        'new_item_name' => __( 'New Mobile Brand Name', 'textdomain' ),
+        'menu_name' => __( 'Mobile Brands', 'textdomain' ),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'public' => true,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'show_in_nav_menus' => true,
+        'show_tagcloud' => true,
+        'rewrite' => array( 'slug' => 'mobile-brands' ),
+    );
+
+    register_taxonomy( 'mobile_brands', array( 'mobile' ), $args );
+}
+
+add_action( 'init', 'create_mobile_brands_taxonomy' );
+

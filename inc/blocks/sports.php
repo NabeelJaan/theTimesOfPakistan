@@ -32,11 +32,9 @@
                     
 
                         <li class="mr-5 relative">
-                            <a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-4">Feartured</a>
+                            <a class="font-Jost text-sm text-center text-heading-color hover:text-green " href="#tabs-4"><?php echo $term->name;?></a>
                         </li>
                         
-                        
-                        <?php print_r(); ?>
 
                     <?php 
                         endforeach;

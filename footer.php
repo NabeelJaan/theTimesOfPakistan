@@ -55,9 +55,9 @@
 								<?php $instagram = get_field( 'instagram' , 'option' ); ?>
 
 								<a href="<?php echo $instagram['url'] ?>" class="border transition ease-in-out duration-500 rounded-full w-10 h-10 items-center justify-center inline-flex hover:bg-green hover:text-white hover:border-green" aria-label="instagram" target="_blank">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px">
-										<path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-									</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px">
+									<path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+								</svg>
 								</a>
 
 							</li>
@@ -68,13 +68,13 @@
 				</div>
 
 				<div class="links-footer navigation lg:pl-14">
-					<h3 class="font-Jost text-3xl font-semibold">Important Links</h3>
+					<h3 class="font-Jost text-3xl font-semibold">Navigation</h3>
 					<ul class="mt-10">
 						<li class="relative pl-4 text-white font-Jost text-lg mb-2 hover:text-green">
 							<a href="#">About us</a>
 						</li>
 						<li class="relative pl-4 text-white font-Jost text-lg mb-2 hover:text-green">
-							<a href="#">Contact us</a>
+							<a href="https://thetimesofpakistan.pk/contact-us/">Contact us</a>
 						</li>
 						<li class="relative pl-4 text-white font-Jost text-lg mb-2 hover:text-green">
 							<a href="#">Projects</a>
@@ -115,12 +115,16 @@
 				</div>
 			</div>
 			<div class="mt-5">
-				<p class="copyright text-white font-Jost text-base text-center">Copyright © 2022 The Times Of Pakistan. All rights reserved.</p>
+				<p class="copyright text-white font-Jost text-base text-center">
+					&copy; <?php echo date('Y'); ?> The Times Of Pakistan. All rights reserved.
+				</p>
 			</div>
 		</div>
 	</div>
 </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
 
 	jQuery("#primary-menu-toggle").on("click",function() {
@@ -199,8 +203,41 @@
 		return false;
 		});
 
+	// splide
+		var main = new Splide( '#main-slider', {
+			type       : 'fade',
+			heightRatio: 0.5,
+			pagination : false,
+			arrows     : false,
+			cover      : true,
+			} );
 
+		var thumbnails = new Splide( '#thumbnail-slider', {
+			rewind          : true,
+			fixedWidth      : 104,
+			fixedHeight     : 58,
+			isNavigation    : true,
+			gap             : 10,
+			focus           : 'center',
+			pagination      : false,
+			cover           : true,
+			dragMinThreshold: {
+				mouse: 4,
+				touch: 10,
+			},
+			breakpoints : {
+				640: {
+				fixedWidth  : 66,
+				fixedHeight : 38,
+				},
+			},
+			} );
+
+		main.sync( thumbnails );
+		main.mount();
+		thumbnails.mount();
 </script>
+
 
 
 <?php wp_footer(); ?>
