@@ -64,7 +64,7 @@
             </div> <!-- End of left div -->
 
 
-            <div class="md:w-3/6 grid grid-row-2 grid-cols-2 gap-1"> <!-- start right div -->
+            <div class="md:w-3/6 grid grid-row-2 md:grid-cols-2 gap-1"> <!-- start right div -->
 
                 <?php
 

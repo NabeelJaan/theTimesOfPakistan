@@ -135,29 +135,7 @@
 
 		<!--********************** Mobile Menu********************** -->
 
-		<div class="mobile-hidden px-2 py-4 flex justify-between items-center shadow-lg mb-4">
-
-
-			<div>
-				<div id="primary-menu-toggle">
-					<div id="bar1" class="bar"></div>
-					<div id="bar2" class="bar"></div>
-					<div id="bar3" class="bar"></div>
-				</div>
-				
-				<?php
-					wp_nav_menu(
-						array(
-							'container_id'    => 'primary-menu',
-							'container_class' => 'hidden mobile-m bg-green px-4 pt-20 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
-							'menu_class'      => 'lg:flex',
-							'theme_location'  => 'primary',
-							'li_class'        => 'text-sm font-semibold',
-							'fallback_cb'     => false,
-						)
-					);
-				?>
-			</div>
+		<div class="block lg:hidden px-2 py-4 flex justify-between items-center shadow-lg mb-4">
 
 
 			<div>
@@ -174,11 +152,32 @@
 						</a>
 					</div>
 
-					<p class="text-sm font-light text-gray-600">
-						<?php echo get_bloginfo( 'description' ); ?>
-					</p>
-
 				<?php } ?>
+
+			</div>
+
+
+			<div>
+
+
+				<div class="toggle lg:hidden" id="primary-menu-toggle">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				
+				<?php
+					wp_nav_menu(
+						array(
+							'container_id'    => 'primary-menu2',
+							'container_class' => 'bg-green px-4 pt-20 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+							'menu_class'      => 'lg:flex',
+							'theme_location'  => 'primary',
+							'li_class'        => 'text-sm font-semibold',
+							'fallback_cb'     => false,
+						)
+					);
+				?>
 
 			</div>
 

@@ -1,6 +1,9 @@
+<?php
+    $id = 'latest-posts-' . $block['id'];
+    $count = get_field('number_of_post');
+?>
 
-
-<section  class="px-4 pb-16 mt-10 xl:px-0">
+<section id="<?php echo esc_attr($id); ?>" class="px-4 pb-16 mt-10 xl:px-0">
 
     <div class="md:max-w-6xl md:mx-auto"> <!-- container -->
 
@@ -46,15 +49,12 @@
                         <a href="<?php the_permalink(); ?>">
                             <h3 class="text-xl font-Jost my-4 font-semibold leading-6"><?php the_title(); ?></h3>
                         </a>
-                        <div class="text-lg font-Jost leading-21 mb-4 my-2">
-                        <?php echo wp_trim_words( get_the_excerpt(), 15 ); ?>
-                        </div>
+                        <div class="text-sm font-Jost leading-21 mb-4 my-2"><?php the_excerpt(); ?></div>
                         <a class="transition ease-in-out duration-500 inline-block bg-green text-white text-xs leading-21 py-7 px-15 hover:bg-dark-green rounded-sm" href="<?php the_permalink(); ?>">Read More</a>
                     </div>
                 </div> <!-- End col-1 -->
 
                 <?php
-
 
                     endwhile;
 
@@ -121,8 +121,9 @@
 
 
                  <div class="border rounded-xl shadow-sm bg-white p-4 mt-8">
+                     <h2 class="font-semibold border-b-2 border-green pb-2 mb-4">Most Viewed</h2>
                     <div>
-                        <?php get_sidebar(); ?> 
+						<?php get_sidebar(); ?>
                     </div>
                  </div>
 

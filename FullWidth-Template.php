@@ -1,4 +1,6 @@
-<?php // Template Name: Full Width ?>
+<?php 
+    // Template Name: Full Width
+?>
 
 <?php get_header(); ?>
 
@@ -12,4 +14,4 @@
         
     <?php endif; ?>
 
-<?php get_footer(); ?>
+<?php get_footer(); 
